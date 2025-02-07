@@ -31,3 +31,11 @@ In today’s job market, connecting companies with the right people for the job 
 To address this, we explored the use of machine-learning-based Natural Language Processing (NLP) embedding models to embed worker profiles and job listings into numerical vectors and meta industries - a broad representation of various industry categories that group similar sectors together. By turning text data, such as work experience, education, and job descriptions, into meaningful semantic vectors, we can better understand how similar a person’s profile is to a job posting.
 
 # Running the code
+Each following sections should be run in the order we describe. Farthermore, after scraping we uploaded the scraped data in to the given DataBricks server, and it should be taken into account when running localy. 
+##  Scraping
+The code for scraping [monster.com](https://www.monster.com/) jobs is found in [scraping.ipynb](Scraping%20Code/scraping.ipynb) 
+You should provide a .env file with the following parameters:
+```python
+USER = 'USER'  # BrightData username
+PASS = 'PASS'  # BrightData password
+```
