@@ -19,7 +19,7 @@
 - [Running the code](#Running-the-code)
   - [Scraping](#Scraping) 🪥
   - [Assign workers to job listings](#Assign-Workers-to-Job-Listing)👜
-  - [Running tests and visualiztions](#Simulating-a-GenAI-LLaVa-Ecosystem)
+  - [Running tests and visualiztions](#Running-tests-and-visualiztions) 🔬
   
 # Overview
 
@@ -39,3 +39,28 @@ You should provide a .env file with the following parameters:
 USER = 'USER'  # BrightData username
 PASS = 'PASS'  # BrightData password
 ```
+## Assign Workers to Job Listings
+This is the main part of the code, that matches job listing into K users. The code is found in [main.ipynb](Databricks%20Code/main.ipynb). 
+You will be greeted with the following parameters, and can change them at your will to get different results:
+```python
+N = 20_000
+seed = 42
+k = 10
+max_sentence_length = 512
+show_null = True
+save_to_dbfs = True
+index_model = 1
+models_list = ['all-MiniLM-L6-v2', # Bert
+                'all-distilroberta-v1', # roberta
+                'multi-qa-distilbert-cos-v1' # distilberta
+                ]
+```
+The parameters are:
+- `N` - number of samples
+- `seed` - seed for randmoness
+- `k` - number of users to get for each job listing
+- `show_null` - bool, will determine if to show null checks or skip
+- `save_to_dbfs` - bool, will determine if to save results to dbfs
+- `index_model` - the index of the chosen model in the model list
+- `models_list` - list of models to use for the embeddings
+
