@@ -33,14 +33,14 @@ To address this, we explored the use of machine-learning-based Natural Language 
 # Running the code
 Each following sections should be run in the order we describe. Farthermore, after scraping we uploaded the scraped data in to the given DataBricks server, and it should be taken into account when running localy. 
 ##  Scraping
-The code for scraping [monster.com](https://www.monster.com/) jobs is found in [scraping.ipynb](Scraping%20Code/scraping.ipynb) 
+The code for scraping [monster.com](https://www.monster.com/) jobs is found in [scraping.ipynb](Scraping%20Code/scraping.ipynb).<br>
 You should provide a .env file with the following parameters:
 ```python
 USER = 'USER'  # BrightData username
 PASS = 'PASS'  # BrightData password
 ```
 ## Assign Workers to Job Listings
-This is the main part of the code, that matches job listing into K users. The code is found in [main.ipynb](Databricks%20Code/main.ipynb). 
+This is the main part of the code, that matches job listing into K users. The code is found in [main.ipynb](Databricks%20Code/main.ipynb).<br> 
 You will be greeted with the following parameters, and can change them at your will to get different results:
 ```python
 N = 20_000
@@ -63,4 +63,8 @@ The parameters are:
 - `save_to_dbfs` - bool, will determine if to save results to dbfs
 - `index_model` - the index of the chosen model in the model list
 - `models_list` - list of models to use for the embeddings
-
+## Running tests and visualiztions
+This is the part of the code that runs the tests and visualiztions.
+- The notebook for plotting the T-SNE is [TSNE.ipynb](Databricks%20Code/TSNE.ipynb)
+- The notebook for plotting meta-industry percentages is [TSNE.ipynb](Databricks%20Code/TSNE.ipynb)
+- The notebook for running the test as mentioned in the report is [test.ipynb](Databricks%20Code/test.ipynb)
