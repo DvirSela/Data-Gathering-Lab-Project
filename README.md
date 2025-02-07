@@ -66,5 +66,5 @@ The parameters are:
 ## Running tests and visualiztions
 This is the part of the code that runs the tests and visualiztions.
 - The notebook for plotting the T-SNE is [TSNE.ipynb](Databricks%20Code/TSNE.ipynb)
-- The notebook for plotting meta-industry percentages is [TSNE.ipynb](Databricks%20Code/TSNE.ipynb)
-- The notebook for running the test as mentioned in the report is [test.ipynb](Databricks%20Code/test.ipynb)
+- The notebook for plotting meta-industry percentages is [meta_dist.ipynb](Databricks%20Code/meta_dist.ipynb)
+- The notebook for running the statistical test as mentioned in the report is [statistical_test.ipynb](Databricks%20Code/statistical_test.ipynb)
