@@ -1,5 +1,5 @@
 
-<h1 align='center' style="text-align:center; font-weight:bold; font-size:2.5em"> Optimizing Job Recommendation Systems Using worker Profile Embeddings</h1>
+<h1 align='center' style="text-align:center; font-weight:bold; font-size:2.5em"> Optimizing Worker-Job Recommendation Systems Using Embeddings Models</h1>
 
 <p align='center' style="text-align:center;font-size:1em;">
     Dvir Sela
